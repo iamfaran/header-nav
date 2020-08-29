@@ -1,0 +1,309 @@
+/* Resetting css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Top Styling */
+
+.header-wrap {
+  transition: transform 1s;
+}
+
+.header-away-animate {
+  transform: perspective(400px) translate3d(0, 20px, -50px);
+  -webkit-transform: perspective(400px) translate3d(0, 20px, -50px);
+}
+
+.header-top {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top-links-box-left ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-top-links-box-left ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+
+.header-top-links-box-right ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-top-links-box-right ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+
+/* Header Top Styling Ends */
+
+/* Logo Section */
+.header-middle-bg-img {
+  min-height: 200px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)),
+    url(../imgs/bull-riding);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar styling ---------------------- */
+.sm-links {
+  display: none;
+  animation-name: textOpacity;
+  animation-duration: 1s;
+  padding: 25px;
+}
+.social-icons {
+  display: flex;
+  /* border: 1px solid wheat; */
+  padding: 10px;
+  color: white;
+  margin-bottom: 50px;
+}
+.social-icon1,
+.social-icon2,
+.social-icon3,
+.social-icon4 {
+  cursor: pointer;
+}
+.social-icons .social-icon2,
+.social-icon3,
+.social-icon4 {
+  margin-left: 50px;
+}
+@keyframes textOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sm-links ul {
+  list-style: none;
+}
+.sm-links ul li a {
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  font-size: 23px;
+  text-decoration: none;
+}
+.sm-links ul li a:hover {
+  color: rgb(0, 191, 255);
+}
+.side-nav-overlay {
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801));
+  transition: all 0.5s;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 2;
+}
+.right-side-nav-overlay {
+  position: relative;
+  /* border: 2px solid red; */
+  padding: 20px;
+  height: 100vh;
+}
+
+.closebtn {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bg {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.sm-logo-img {
+  max-width: 180px;
+  display: none;
+}
+
+/* .myform ul {
+  display: flex;
+  list-style: none;
+} */
+.myform li a {
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+.logo {
+  color: white;
+  /* margin: 0 10px; */
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-right: auto;
+}
+nav ul li a {
+  display: inline-block;
+  color: yellow;
+  text-decoration: none;
+  padding: 0 14px;
+  line-height: 55px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  /* border: 1px solid red; */
+}
+nav ul li a:hover {
+  border-bottom: 2px solid red;
+}
+.nav-links li {
+  margin: 0 10px;
+}
+
+.navbtn {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  display: none;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.navbtn .line {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.push-nav {
+  width: 100%;
+}
+
+.side-nav-hide {
+  display: none;
+}
+.search-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  display: none;
+}
+
+.right-side-nav {
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801));
+  z-index: 3;
+  transition: all 0.5s;
+}
+.closebtn2 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  cursor: pointer;
+}
+.slide-from-right {
+  width: 100%;
+}
+.search-input-box {
+  margin-top: 50px;
+  text-align: center;
+}
+.search-input-box span {
+  display: inline-block;
+  color: white;
+}
+.search-input {
+  position: relative;
+  display: block;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  width: 100%;
+}
+/* media queries for responsiveness */
+
+@media screen and (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+  .sm-logo-img {
+    display: block;
+  }
+
+  nav {
+  }
+
+  .myform {
+    display: none;
+  }
+  .navbtn {
+    display: block;
+  }
+  .search-btn {
+    display: block;
+  }
+  .header-top {
+    display: none;
+  }
+  .header-middle-bg-img {
+    display: none;
+  }
+}
+
+/* ---------------------------------- */
